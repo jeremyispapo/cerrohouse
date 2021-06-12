@@ -1,0 +1,13 @@
+mixin caja(imagen, usuario, titulo, texto)
+	article.caja
+		figure.caja__imagen: img(src="images/"+imagen, alt="foto del articulo")
+		.caja__contenido
+			figure.caja__usuario: img(src="images/"+usuario, alt="cara del usuario")
+			h3.title__card #{titulo}
+			p #{texto}
+mixin tarjeta__usuario(usuario, nickName, nickName__redes)
+	article.tarjeta
+		figure.tarjeta__imagen: img(src="images/"+usuario, alt="cara del usuario")
+		h3.title__card #{nickName}
+		span.subtitle__card #{nickName__redes}
+		a(href="#") Ver Perfil
