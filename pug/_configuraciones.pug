@@ -1,13 +1,14 @@
 mixin caja(imagen, usuario, titulo, texto)
 	article.caja
-		figure.caja__imagen: img(src="images/"+imagen, alt="foto del articulo")
+		figure.caja__imagen: img(src="assets/images/anuncios_blog/"+imagen, alt="foto del articulo:"+imagen)
 		.caja__contenido
-			figure.caja__usuario: img(src="images/"+usuario, alt="cara del usuario")
+			figure.caja__usuario: img(src="assets/images/faces/"+usuario, alt="cara del usuario: "+usuario)
 			h3.title__card #{titulo}
 			p #{texto}
+			a(href="") Ver Mas
 mixin tarjeta__usuario(usuario, nickName, nickName__redes)
 	article.tarjeta
-		figure.tarjeta__imagen: img(src="images/"+usuario, alt="cara del usuario")
+		figure.tarjeta__imagen: img(src="../assets/images/faces/"+usuario, alt="cara del usuario: "+usuario)
 		h3.title__card #{nickName}
 		span.subtitle__card #{nickName__redes}
 		a(href="#") Ver Perfil
@@ -56,3 +57,9 @@ mixin songs(song__img,song__title,song__artist,song__time,song__link)
 		span.song__artist #{song__artist}
 		span.song__time #{song__time}
 		a.song__artist(href=""+song__link target="_blank"): span ▶
+
+mixin buttons_blog(op1,op2,op3)
+	.box__buttons
+		button #{op1}
+		button #{op2}
+		button #{op3}
