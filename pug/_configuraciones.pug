@@ -11,3 +11,48 @@ mixin tarjeta__usuario(usuario, nickName, nickName__redes)
 		h3.title__card #{nickName}
 		span.subtitle__card #{nickName__redes}
 		a(href="#") Ver Perfil
+
+mixin hero_blog(titulo)
+	h1.hero__title #{titulo}
+
+mixin principal(foto,titulo,insta,frase,fecha)
+	figure
+		img(src=""+foto, alt="alt")
+	h1 #{titulo}
+	span.link 
+		a(href="https://instagram.com" target="_blank") #{insta}
+	p.quote #{frase}
+	span.date #{fecha}
+
+mixin stickers(st1,st2,st3,st4,st5)
+	h2.section__title Stickers
+	div.content__stickers 
+		figure
+			img(src=""+st1, alt="alt")
+		figure
+			img(src=""+st2, alt="alt")
+		figure
+			img(src=""+st3, alt="alt")
+		figure
+			img(src=""+st4, alt="alt")
+		figure
+			img(src=""+st5, alt="alt")
+
+mixin photos(ph1,ph2,ph3)
+	h2.section__title Fotos
+	div.content__photos
+		figure
+			img(src=""+ph1, alt="alt")
+		figure
+			img(src=""+ph2, alt="alt")
+		figure
+			img(src=""+ph3, alt="alt")
+
+mixin songs(song__img,song__title,song__artist,song__time,song__link)
+	article
+		figure
+			img(src=""+song__img, alt="alt")
+		h3.song__title #{song__title}
+		span.song__artist #{song__artist}
+		span.song__time #{song__time}
+		a.song__artist(href=""+song__link target="_blank"): span ▶
