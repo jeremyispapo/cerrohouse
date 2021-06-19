@@ -1,10 +1,18 @@
 extend pug/_plantilla.pug
+block direccionCSS
+	link(rel="stylesheet", href="css/landing.css")
+
 block contenido_main
-	main 
+	main
 		section.hero 
 			article.hero__content
-				h1.tituloPrincipal Bienvenido a Cerro House
-				p No, no es broma, Cerro House ahora tiene un website superPerron!!!, o eso creo...
+				picture.hero__image
+					source(media="(min-width:700px )", srcset="assets/images/foto_portada_desktop.png")
+					img(src="assets/images/foto_portada.png")
+				.text_content
+					h1.tituloPrincipal Bienvenido a Cerro House
+					p No, no es broma, Cerro House ahora tiene un website superPerron!!!, o eso creo...
+					+buttons__links('blog1.html')
 		section.anuncios
 			h2.section__title Anuncios
 			.section__grid

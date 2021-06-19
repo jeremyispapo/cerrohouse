@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  background-color: orange;
+  width: 100%;
+  height: 6.5rem;
+  padding-inline: 2rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 6.5rem;
+  background-color: orange;
+  width: 100%;
+}
+header .icon_menu {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  background-image: url(../assets/icons/menu.svg);
+  background-size: 100%;
+  left: 2rem;
+}
+header .logo {
+  width: 15rem;
+}
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.button__link {
+  display: inline-block;
+  background-color: #2510df;
+  -webkit-margin-before: 1rem;
+          margin-block-start: 1rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0.7rem;
+}
+
+footer {
+  padding-inline: 2rem;
+  height: 6.5rem;
+  background-color: orange;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.hero {
+  width: 100%;
+}
+
+.text_content {
+  width: 90%;
+  margin: 0 auto;
+  background-color: rgba(28, 28, 28, 0.8);
+  padding: 2rem;
+  position: relative;
+  border-radius: 0.7rem;
+  top: -3rem;
+}
+.text_content p {
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.tituloPrincipal {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.anuncios {
+  padding: 3rem;
+}

@@ -1,0 +1,37 @@
+//Variables
+$color__principal: orange
+$color__secundario: #2510df
+$color__oscuro: #1c1c1c
+$espaciado_normal: 2rem
+$text__size: 1.6rem
+$h1__size: 2.5rem
+$border__radius: .7rem
+
+//Mixins
+
+@mixin centraElementos
+	display: flex
+	justify-content: center
+	align-items: center
+
+@mixin headFooter
+	height: 6.5rem
+	background-color: $color__principal
+	width: 100%
+
+@mixin title__h1
+	font-family:'Roboto', sans-serif
+	font-size: $h1__size
+	color: #fff
+@mixin text__regular
+	font-size:  $text__size
+
+@mixin button__link
+	display: inline-block
+	background-color:$color__secundario
+	margin-block-start: 1rem
+	padding: 1rem
+	@include text__regular
+	color: #fff
+	text-decoration: none
+	border-radius: $border__radius

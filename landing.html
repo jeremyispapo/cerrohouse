@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cerro House || Oficial</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&amp;family=Roboto:wght@700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/landing.css">
   </head>
   <body> 
     <header> 
+      <figure class="logo"><img src="assets/images/logo_cerro_house.png"></figure>
+      <div class="icon_menu"></div>
       <nav> 
-        <div class="logo"></div>
         <ul>
           <li><a href="landing.html">Inicio</a></li>
           <li><a href="participantes.html">Participantes</a></li>
@@ -17,11 +21,16 @@
         </ul>
       </nav>
     </header>
-    <main> 
+    <main>
       <section class="hero"> 
         <article class="hero__content">
-          <h1 class="tituloPrincipal">Bienvenido a Cerro House</h1>
-          <p>No, no es broma, Cerro House ahora tiene un website superPerron!!!, o eso creo...</p>
+          <picture class="hero__image">
+            <source media="(min-width:700px )" srcset="assets/images/foto_portada_desktop.png"><img src="assets/images/foto_portada.png">
+          </picture>
+          <div class="text_content">
+            <h1 class="tituloPrincipal">Bienvenido a Cerro House</h1>
+            <p>No, no es broma, Cerro House ahora tiene un website superPerron!!!, o eso creo...</p><a class="button__link" href="blog1.html">Ver Mas</a>
+          </div>
         </article>
       </section>
       <section class="anuncios">
@@ -32,14 +41,14 @@
             <div class="caja__contenido">
               <figure class="caja__usuario"><img src="assets/images/faces/jeremy.jpg" alt="cara del usuario: jeremy.jpg"/></figure>
               <h3 class="title__card">Bienvenido a Cerro House</h3>
-              <p>No, no es broma, Cerro House ahora tiene un website superPerron!!!, o eso creo...</p><a href="">Ver Mas</a>
+              <p>No, no es broma, Cerro House ahora tiene un website superPerron!!!, o eso creo...</p><a href="">Ver Perfil</a>
             </div>
           </article>
         </div>
       </section>
     </main>
     <footer>
-      <p>Todos los reservados por Cerro House || Oficial</p>&copy; 2016 |<a href="#">View Source</a>
+      <p>Todos los reservados por Cerro House || Oficial | &copy; 2021 |</p>
     </footer>
   </body>
 </html>

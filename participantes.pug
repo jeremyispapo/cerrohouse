@@ -1,12 +1,8 @@
 extend pug/_plantilla.pug
+block direccionCSS
+	link(rel="stylesheet", href="css/participantes.css")
 block contenido_main
 	main
 		h1.tituloPrincipal Participantes
 		section.section__grid
-			+tarjeta__usuario('Jeremy', 'Jeremyispapo', '@Palomino.dev')
-			+tarjeta__usuario('Jeremy', 'Jeremyispapo', '@Palomino.dev')
-			+tarjeta__usuario('Jeremy', 'Jeremyispapo', '@Palomino.dev')
-			+tarjeta__usuario('Jeremy', 'Jeremyispapo', '@Palomino.dev')
-			+tarjeta__usuario('Jeremy', 'Jeremyispapo', '@Palomino.dev')
-			+tarjeta__usuario('Jeremy', 'Jeremyispapo', '@Palomino.dev')
-			+tarjeta__usuario('Jeremy', 'Jeremyispapo', '@Palomino.dev')
+			+tarjeta__usuario('jeremy.jpg', 'Jeremyispapo', '@Palomino.dev')

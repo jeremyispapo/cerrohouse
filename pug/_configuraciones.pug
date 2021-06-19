@@ -5,7 +5,7 @@ mixin caja(imagen, usuario, titulo, texto)
 			figure.caja__usuario: img(src="assets/images/faces/"+usuario, alt="cara del usuario: "+usuario)
 			h3.title__card #{titulo}
 			p #{texto}
-			a(href="") Ver Mas
+			a(href="") Ver Perfil
 mixin tarjeta__usuario(usuario, nickName, nickName__redes)
 	article.tarjeta
 		figure.tarjeta__imagen: img(src="../assets/images/faces/"+usuario, alt="cara del usuario: "+usuario)
@@ -16,12 +16,12 @@ mixin tarjeta__usuario(usuario, nickName, nickName__redes)
 mixin hero_blog(titulo)
 	h1.hero__title #{titulo}
 
-mixin principal(foto,titulo,insta,frase,fecha)
+mixin principal(usuario,nickName,link,nickName__redes,frase,fecha)
 	figure
-		img(src=""+foto, alt="alt")
-	h1 #{titulo}
+		img(src="../assets/images/faces/"+usuario, alt="alt")
+	h1 #{nickName}
 	span.link 
-		a(href="https://instagram.com" target="_blank") #{insta}
+		a(href=""+link target="_blank") #{nickName__redes}
 	p.quote #{frase}
 	span.date #{fecha}
 
@@ -63,3 +63,5 @@ mixin buttons_blog(op1,op2,op3)
 		button #{op1}
 		button #{op2}
 		button #{op3}
+mixin buttons__links(link)
+	a.button__link(href=""+link) Ver Mas
