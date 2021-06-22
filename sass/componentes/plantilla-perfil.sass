@@ -1,0 +1,128 @@
+@import _plantilla
+
+.principal
+	width: 100%
+	max-width: 40rem
+	// height: 50rem
+	display: grid
+	margin: 0 auto
+	grid-template-columns: 1fr 2fr
+	grid-template-rows: 2.5rem 2rem 3rem 2rem
+	grid-gap: 1rem
+	&__image
+		border-radius: 30rem
+		width: 7rem
+		max-width: 14rem
+		height: 7rem
+		max-height: 14rem
+		grid-row: 1/6
+		grid-column: 1/2
+		overflow: hidden
+		border: 1px solid $color__oscuro
+		justify-self: center
+		align-self: start
+	&__title 
+		grid-column: 2/3
+		grid-row: 1/2
+		align-self: center
+		font-size: $h1__size - .2rem
+		margin-inline-start: 1rem
+	&__quote
+		grid-column: 2/3
+		grid-row: 3/4
+		margin-inline-start: 1rem
+		@include cursivas
+		font-weight: bold
+		letter-spacing: 1px
+		line-height: 1rem
+		align-self: center
+	&__date
+		grid-column: 2/3
+		grid-row: 4/5
+		margin-inline-start: 1rem
+		font-size: 1.4rem
+
+.stickers
+	max-width: 70rem
+	margin: 0 auto
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	&__content 
+		display: flex
+		overflow-x: scroll
+		overscroll-behavior-x: contain
+		scroll-snap-type: x proximity
+		&::-webkit-scrollbar
+			background-color: transparentize($color__principal, .9 )
+			height: 3px
+		&::-webkit-scrollbar-thumb
+			background-color: $color__principal
+	&__item
+		scroll-snap-align: center
+		min-width: 8rem
+		height: 8rem
+		background: red
+		margin-inline-end: 1.4rem
+		margin-block-end: 1.4rem
+
+.title__flex
+	width: 100%
+	justify-self: start
+.photos
+	@extend .stickers
+	&__content
+		@extend .stickers__content
+	&__item
+		scroll-snap-align: center
+		min-width: 20rem
+		height: 20rem
+		background: green
+		margin-inline-end: 1.4rem
+		margin-block-end: 1.4rem
+
+.song
+	margin-block: 1rem
+	width: 28rem
+	height: 7rem
+	display: grid
+	grid-template-columns: 1fr 2fr 1fr
+	grid-template-rows: 1fr 1fr 1fr
+	border-radius: $border__radius
+	border: 1px solid $color__oscuro
+	padding: .5rem
+	&__img
+		height: 5rem
+		width: 5rem
+		grid-column: 1/2
+		grid-row: 1/4
+		background: yellow
+		justify-self: center
+		align-self: center
+		border-radius: 30rem
+		overflow: hidden
+	&__title
+		grid-column: 2/3
+		grid-row: 1/2
+		margin-inline-start: 1rem
+	&__artist
+		grid-column: 2/3
+		grid-row: 2/3
+		margin-inline-start: 1rem
+	&__time
+		grid-column: 2/3
+		grid-row: 3/4
+		margin-inline-start: 1rem
+	&__link
+		grid-column: 3/4
+		grid-row: 1/4
+		display: block
+		justify-self: center
+		align-self: center
+	&__icon
+		display: block
+		width: 3rem
+		height: 3rem
+		background-image: url(../assets/icons/play.svg)
+		background-size: 100%
+

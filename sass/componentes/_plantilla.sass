@@ -9,10 +9,62 @@
 html 
 	font-size: 62.5%
 
+body
+	background: #c7c7c7
+
 img 
 	width: 100%
+
+a 
+	text-decoration: none
 
 @import _header
 .button__link
 	@include button__link
+	&--user
+		@extend .button__link
+		font-size: $text__size - .5rem
+		padding-block: .5rem
+		padding-inline: 2rem 
+
+.section__grid
+	@include section__grid
+
+.section__title
+	@include section__title
+
+.pd__section
+	@include pd__section
+
+.tarjeta
+	width: 80%
+	max-width: 25rem
+	height: 30rem
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	border-radius: $border__radius--card
+	margin: $espaciado_normal
+	@include sombra__caja
+	&__imagen
+		width: 11rem
+		height: 11rem
+		border-radius: 20rem
+		overflow: hidden
+		border: 1px solid $color__oscuro
+.subtitle__card 
+	@include cursivas
+	text-decoration: none
+	font-size: $text__size
+	&--perfil
+		@extend .subtitle__card
+		margin-inline-start: 1rem
+
+.title__card 
+	@include card__title
+	text-align: center
 @import _footer
+
+.caja
+	@include card__page

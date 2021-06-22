@@ -1,6 +1,6 @@
 extends _plantilla
 block direccionCSS
-	link(rel="stylesheet", href="css/jeremy.css")
+	link(rel="stylesheet", href="css/plantilla-perfil.css")
 block principal 
 	+principal('jeremy.jpg','Jeremyispapo','https://www.instagram.com/palomino.dev/','Palomino.Dev','Tareas hay muchas, vida una sola, asi que...','17/07/21')
 
@@ -11,7 +11,8 @@ block photos
 	+photos('ph1','ph2','ph3')
 
 block songs
+	h2.section__title.title__flex Canciones
 	+songs('twenty__pilots.png','Level of Concern', 'twenty one Pilot','3:52 min', 'https://www.youtube.com/watch?v=loOWKm8GW6A')
 	+songs('dualipa.png','Leviating', 'Dua Lipa', '3:50 min', 'https://www.youtube.com/watch?v=TUVcZfQe-Kw')
 	+songs('Daikiri.png', 'Daikiri','Simon Grossmann','3:57 min', 'https://www.youtube.com/watch?v=yJGAEh2gmDE')
-	+songs('todo_de_ti.png','todo_de_ti','Rauw Alejandro','3:31 min','https://www.youtube.com/watch?v=CFPLIaMpGrY')
+	+songs('todo_de_ti.png','todo de ti','Rauw Alejandro','3:31 min','https://www.youtube.com/watch?v=CFPLIaMpGrY')

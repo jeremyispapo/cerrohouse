@@ -7,7 +7,7 @@
     <title>Cerro House || Oficial</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&amp;family=Roboto:wght@700&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/jeremy.css">
+    <link rel="stylesheet" href="css/plantilla-perfil.css">
   </head>
   <body> 
     <header> 
@@ -21,46 +21,47 @@
         </ul>
       </nav>
     </header>
-    <main> 
+    <main class="pd__section">
       <section class="principal">
-        <figure><img src="../assets/images/faces/jeremy.jpg" alt="alt"/></figure>
-        <h1>Jeremyispapo</h1><span class="link"> <a href="https://www.instagram.com/palomino.dev/" target="_blank">Palomino.Dev</a></span>
-        <p class="quote">Tareas hay muchas, vida una sola, asi que...</p><span class="date">17/07/21</span>
+        <figure class="principal__image"><img src="../assets/images/faces/jeremy.jpg" alt="alt"/></figure>
+        <h1 class="principal__title">Jeremyispapo</h1><a class="subtitle__card--perfil" href="https://www.instagram.com/palomino.dev/" target="_blank">Palomino.Dev</a>
+        <p class="principal__quote">Tareas hay muchas, vida una sola, asi que...</p><span class="principal__date">17/07/21</span>
       </section>
       <section class="stickers">
-        <h2 class="section__title">Stickers</h2>
-        <div class="content__stickers"> 
-          <figure><img src="st1" alt="alt"/></figure>
-          <figure><img src="st2" alt="alt"/></figure>
-          <figure><img src="st3" alt="alt"/></figure>
-          <figure><img src="st4" alt="alt"/></figure>
-          <figure><img src="st5" alt="alt"/></figure>
+        <h2 class="section__title title__flex">Stickers</h2>
+        <div class="stickers__content">
+          <figure class="stickers__item"><img src="st1" alt="alt"/></figure>
+          <figure class="stickers__item"><img src="st2" alt="alt"/></figure>
+          <figure class="stickers__item"> <img src="st3" alt="alt"/></figure>
+          <figure class="stickers__item"><img src="st4" alt="alt"/></figure>
+          <figure class="stickers__item"><img src="st5" alt="alt"/></figure>
         </div>
       </section>
       <section class="photos">
-        <h2 class="section__title">Fotos</h2>
-        <div class="content__photos">
-          <figure><img src="ph1" alt="alt"/></figure>
-          <figure><img src="ph2" alt="alt"/></figure>
-          <figure><img src="ph3" alt="alt"/></figure>
+        <h2 class="section__title title__flex">Fotos</h2>
+        <div class="photos__content">
+          <figure class="photos__item"><img src="ph1" alt="alt"/></figure>
+          <figure class="photos__item"><img src="ph2" alt="alt"/></figure>
+          <figure class="photos__item"><img src="ph3" alt="alt"/></figure>
         </div>
       </section>
       <section class="songs">
-        <article>
-          <figure><img src="twenty__pilots.png" alt="alt"/></figure>
-          <h3 class="song__title">Level of Concern</h3><span class="song__artist">twenty one Pilot</span><span class="song__time">3:52 min</span><a class="song__artist" href="https://www.youtube.com/watch?v=loOWKm8GW6A" target="_blank"><span>▶</span></a>
+        <h2 class="section__title title__flex">Canciones</h2>
+        <article class="song">
+          <figure class="song__img"><img src="twenty__pilots.png" alt="alt"/></figure>
+          <h3 class="song__title">Level of Concern</h3><span class="song__artist">twenty one Pilot</span><span class="song__time">3:52 min</span><a class="song__link" href="https://www.youtube.com/watch?v=loOWKm8GW6A" target="_blank"><span class="song__icon"></span></a>
         </article>
-        <article>
-          <figure><img src="dualipa.png" alt="alt"/></figure>
-          <h3 class="song__title">Leviating</h3><span class="song__artist">Dua Lipa</span><span class="song__time">3:50 min</span><a class="song__artist" href="https://www.youtube.com/watch?v=TUVcZfQe-Kw" target="_blank"><span>▶</span></a>
+        <article class="song">
+          <figure class="song__img"><img src="dualipa.png" alt="alt"/></figure>
+          <h3 class="song__title">Leviating</h3><span class="song__artist">Dua Lipa</span><span class="song__time">3:50 min</span><a class="song__link" href="https://www.youtube.com/watch?v=TUVcZfQe-Kw" target="_blank"><span class="song__icon"></span></a>
         </article>
-        <article>
-          <figure><img src="Daikiri.png" alt="alt"/></figure>
-          <h3 class="song__title">Daikiri</h3><span class="song__artist">Simon Grossmann</span><span class="song__time">3:57 min</span><a class="song__artist" href="https://www.youtube.com/watch?v=yJGAEh2gmDE" target="_blank"><span>▶</span></a>
+        <article class="song">
+          <figure class="song__img"><img src="Daikiri.png" alt="alt"/></figure>
+          <h3 class="song__title">Daikiri</h3><span class="song__artist">Simon Grossmann</span><span class="song__time">3:57 min</span><a class="song__link" href="https://www.youtube.com/watch?v=yJGAEh2gmDE" target="_blank"><span class="song__icon"></span></a>
         </article>
-        <article>
-          <figure><img src="todo_de_ti.png" alt="alt"/></figure>
-          <h3 class="song__title">todo_de_ti</h3><span class="song__artist">Rauw Alejandro</span><span class="song__time">3:31 min</span><a class="song__artist" href="https://www.youtube.com/watch?v=CFPLIaMpGrY" target="_blank"><span>▶</span></a>
+        <article class="song">
+          <figure class="song__img"><img src="todo_de_ti.png" alt="alt"/></figure>
+          <h3 class="song__title">todo de ti</h3><span class="song__artist">Rauw Alejandro</span><span class="song__time">3:31 min</span><a class="song__link" href="https://www.youtube.com/watch?v=CFPLIaMpGrY" target="_blank"><span class="song__icon"></span></a>
         </article>
       </section>
     </main>

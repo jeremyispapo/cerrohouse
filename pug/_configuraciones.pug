@@ -1,62 +1,61 @@
-mixin caja(imagen, usuario, titulo, texto)
-	article.caja
-		figure.caja__imagen: img(src="assets/images/anuncios_blog/"+imagen, alt="foto del articulo:"+imagen)
-		.caja__contenido
-			figure.caja__usuario: img(src="assets/images/faces/"+usuario, alt="cara del usuario: "+usuario)
-			h3.title__card #{titulo}
-			p #{texto}
-			a(href="") Ver Perfil
-mixin tarjeta__usuario(usuario, nickName, nickName__redes)
+mixin caja(imagen, usuario, titulo, texto,link)
+		a(href=""+link).caja
+			figure.caja__imagen: img(src="assets/images/anuncios_blog/"+imagen, alt="foto del articulo:"+imagen)
+			.caja__contenido
+				figure.caja__usuario: img(src="assets/images/faces/"+usuario, alt="cara del usuario: "+usuario)
+				h3.title__card #{titulo}
+				p #{texto}
+			
+mixin tarjeta__usuario(usuario, nickName, nickName__redes, user__perfil)
 	article.tarjeta
 		figure.tarjeta__imagen: img(src="../assets/images/faces/"+usuario, alt="cara del usuario: "+usuario)
 		h3.title__card #{nickName}
-		span.subtitle__card #{nickName__redes}
-		a(href="#") Ver Perfil
+		a.subtitle__card(href="https://www.instagram.com/palomino.dev/") #{nickName__redes}
+		a.button__link--user(href=""+user__perfil) Ver Perfil
 
 mixin hero_blog(titulo)
 	h1.hero__title #{titulo}
 
 mixin principal(usuario,nickName,link,nickName__redes,frase,fecha)
-	figure
+	figure.principal__image
 		img(src="../assets/images/faces/"+usuario, alt="alt")
-	h1 #{nickName}
-	span.link 
-		a(href=""+link target="_blank") #{nickName__redes}
-	p.quote #{frase}
-	span.date #{fecha}
+	h1.principal__title #{nickName}
+	a.subtitle__card--perfil(href=""+link target="_blank") #{nickName__redes}
+	p.principal__quote #{frase}
+	span.principal__date #{fecha}
 
 mixin stickers(st1,st2,st3,st4,st5)
-	h2.section__title Stickers
-	div.content__stickers 
-		figure
+	h2.section__title.title__flex Stickers
+	div.stickers__content
+		figure.stickers__item
 			img(src=""+st1, alt="alt")
-		figure
+		figure.stickers__item
 			img(src=""+st2, alt="alt")
-		figure
+		figure.stickers__item 
 			img(src=""+st3, alt="alt")
-		figure
+		figure.stickers__item
 			img(src=""+st4, alt="alt")
-		figure
+		figure.stickers__item
 			img(src=""+st5, alt="alt")
 
 mixin photos(ph1,ph2,ph3)
-	h2.section__title Fotos
-	div.content__photos
-		figure
+	h2.section__title.title__flex Fotos
+	div.photos__content
+		figure.photos__item
 			img(src=""+ph1, alt="alt")
-		figure
+		figure.photos__item
 			img(src=""+ph2, alt="alt")
-		figure
+		figure.photos__item
 			img(src=""+ph3, alt="alt")
 
 mixin songs(song__img,song__title,song__artist,song__time,song__link)
-	article
-		figure
-			img(src=""+song__img, alt="alt")
-		h3.song__title #{song__title}
-		span.song__artist #{song__artist}
-		span.song__time #{song__time}
-		a.song__artist(href=""+song__link target="_blank"): span ▶
+		article.song
+			figure.song__img
+				img(src=""+song__img, alt="alt")
+			h3.song__title #{song__title}
+			span.song__artist #{song__artist}
+			span.song__time #{song__time}
+			a.song__link(href=""+song__link target="_blank"): span.song__icon
 
 mixin buttons_blog(op1,op2,op3)
 	.box__buttons

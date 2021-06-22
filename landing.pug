@@ -7,13 +7,14 @@ block contenido_main
 		section.hero 
 			article.hero__content
 				picture.hero__image
-					source(media="(min-width:700px )", srcset="assets/images/foto_portada_desktop.png")
+					source(media="(min-width:760px )", srcset="assets/images/foto_portada_desktop.png")
 					img(src="assets/images/foto_portada.png")
 				.text_content
-					h1.tituloPrincipal Bienvenido a Cerro House
+					h1.tituloPrincipal 
+						a(href="blog1.html") Bienvenido a Cerro House
 					p No, no es broma, Cerro House ahora tiene un website superPerron!!!, o eso creo...
 					+buttons__links('blog1.html')
-		section.anuncios
+		section.pd__section
 			h2.section__title Anuncios
 			.section__grid
-				+caja('foto_portada.png','jeremy.jpg','Bienvenido a Cerro House','No, no es broma, Cerro House ahora tiene un website superPerron!!!, o eso creo...')
+				+caja('foto_portada.png','jeremy.jpg','Bienvenido a Cerro House','No, no es broma, Cerro House ahora tiene un website superPerron!!!, o eso creo...','blog1.html')
