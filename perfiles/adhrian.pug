@@ -1,0 +1,18 @@
+extends _plantilla
+block direccionCSS
+	link(rel="stylesheet", href="css/plantilla-perfil.css")
+block principal 
+	+principal('adhrian/adhrian.jpg','Adhrian','https://www.instagram.com/adrh023/','adrh023','No pes','22/02/14')
+
+block stickers
+	+stickers('adhrian/stickers/st1.webp','adhrian/stickers/st2.webp','adhrian/stickers/st3.webp','adhrian/stickers/st4.webp','adhrian/stickers/st5.webp')
+
+block photos 
+	+photos('adhrian/fotos/ft1.jpg','adhrian/fotos/ft2.jpg','adhrian/fotos/ft3.jpg')
+
+block songs
+	h2.section__title.title__flex Canciones
+	+songs('adhrian/canciones/cn1.jpg','In my place', 'Coldplay','3:46 min', 'https://www.youtube.com/watch?v=gnIZ7RMuLpU')
+	+songs('adhrian/canciones/cn2.jpg','Tear in My Heart', 'Twenty One Pilots', '3:13 min', 'https://www.youtube.com/watch?v=nky4me4NP70')
+	+songs('adhrian/canciones/cn3.jpg', 'LA Devotee','P!ATD','4:04 min', 'https://www.youtube.com/watch?v=r5dNcKTcnPA')
+	+songs('adhrian/canciones/cn4.jpg','Prófugos','Soda Esterio','5:20 min','https://www.youtube.com/watch?v=lGptyREttJ4')

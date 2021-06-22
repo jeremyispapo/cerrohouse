@@ -10,26 +10,28 @@
     <link rel="stylesheet" href="css/blogs.css">
   </head>
   <body> 
-    <header> 
-      <figure class="logo"><img src="assets/images/logo_cerro_house.png"></figure>
-      <div class="icon_menu"></div>
-      <nav> 
-        <ul>
-          <li><a href="landing.html">Inicio</a></li>
-          <li><a href="participantes.html">Participantes</a></li>
-          <li><a href="blogs.html">Blog</a></li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="header__content">
+        <figure class="header__logo"><img src="assets/images/logo_cerro_house.png"></figure>
+        <div class="header__icon" id="menu"> </div>
+        <nav class="nav" id="nav"> 
+          <ul class="nav__ul">
+            <li class="nav__item"><a class="nav__link" href="landing.html">Inicio</a></li>
+            <li class="nav__item"><a class="nav__link" href="blogs.html">Blog</a></li>
+            <li class="nav__item"><a class="nav__link" href="participantes.html">Participantes</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-      <h1>Lista de Blogs</h1>
       <section class="pd__section">
+        <h1 class="section__title">Lista de Blogs</h1>
         <div class="section__grid"><a class="caja" href="blog1.html">
-            <figure class="caja__imagen"><img src="assets/images/anuncios_blog/imagen" alt="foto del articulo:imagen"/></figure>
+            <figure class="caja__imagen"><img src="../assets/images/anuncios_blog/foto_portada.png" alt="foto del articulo:foto_portada.png"/></figure>
             <div class="caja__contenido">
-              <figure class="caja__usuario"><img src="assets/images/faces/jeremy" alt="cara del usuario: jeremy"/></figure>
-              <h3 class="title__card">Si volvieramos a empezar?</h3>
-              <p>Hace unos dias estube pensando en que...</p>
+              <figure class="caja__usuario"><img src="../assets/images/users/jeremy/jeremy.jpg" alt="alt"/></figure>
+              <h3 class="title__card">Bienvenido a Cerro House</h3>
+              <p>No, no es broma, Cerro House ahora tiene un website superPerron!!!, o eso creo...</p>
             </div></a>
         </div>
       </section>
@@ -37,5 +39,6 @@
     <footer>
       <p>Todos los reservados por Cerro House || Oficial | &copy; 2021 |</p>
     </footer>
+    <script src="main.js"> </script>
   </body>
 </html>

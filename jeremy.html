@@ -10,57 +10,59 @@
     <link rel="stylesheet" href="css/plantilla-perfil.css">
   </head>
   <body> 
-    <header> 
-      <figure class="logo"><img src="assets/images/logo_cerro_house.png"></figure>
-      <div class="icon_menu"></div>
-      <nav> 
-        <ul>
-          <li><a href="landing.html">Inicio</a></li>
-          <li><a href="participantes.html">Participantes</a></li>
-          <li><a href="blogs.html">Blog</a></li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="header__content">
+        <figure class="header__logo"><img src="assets/images/logo_cerro_house.png"></figure>
+        <div class="header__icon" id="menu"> </div>
+        <nav class="nav" id="nav"> 
+          <ul class="nav__ul">
+            <li class="nav__item"><a class="nav__link" href="landing.html">Inicio</a></li>
+            <li class="nav__item"><a class="nav__link" href="blogs.html">Blog</a></li>
+            <li class="nav__item"><a class="nav__link" href="participantes.html">Participantes</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="pd__section">
       <section class="principal">
-        <figure class="principal__image"><img src="../assets/images/faces/jeremy.jpg" alt="alt"/></figure>
+        <figure class="principal__image"><img src="../assets/images/users/jeremy/jeremy.jpg" alt="alt"/></figure>
         <h1 class="principal__title">Jeremyispapo</h1><a class="subtitle__card--perfil" href="https://www.instagram.com/palomino.dev/" target="_blank">Palomino.Dev</a>
         <p class="principal__quote">Tareas hay muchas, vida una sola, asi que...</p><span class="principal__date">17/07/21</span>
       </section>
       <section class="stickers">
         <h2 class="section__title title__flex">Stickers</h2>
         <div class="stickers__content">
-          <figure class="stickers__item"><img src="st1" alt="alt"/></figure>
-          <figure class="stickers__item"><img src="st2" alt="alt"/></figure>
-          <figure class="stickers__item"> <img src="st3" alt="alt"/></figure>
-          <figure class="stickers__item"><img src="st4" alt="alt"/></figure>
-          <figure class="stickers__item"><img src="st5" alt="alt"/></figure>
+          <figure class="stickers__item"><img src="../assets/images/users/jeremy/stickers/st1.webp" alt="alt"/></figure>
+          <figure class="stickers__item"><img src="../assets/images/users/jeremy/stickers/st2.webp" alt="alt"/></figure>
+          <figure class="stickers__item"> <img src="../assets/images/users/jeremy/stickers/st3.webp" alt="alt"/></figure>
+          <figure class="stickers__item"><img src="../assets/images/users/jeremy/stickers/st4.webp" alt="alt"/></figure>
+          <figure class="stickers__item"><img src="../assets/images/users/jeremy/stickers/st5.webp" alt="alt"/></figure>
         </div>
       </section>
       <section class="photos">
         <h2 class="section__title title__flex">Fotos</h2>
         <div class="photos__content">
-          <figure class="photos__item"><img src="ph1" alt="alt"/></figure>
-          <figure class="photos__item"><img src="ph2" alt="alt"/></figure>
-          <figure class="photos__item"><img src="ph3" alt="alt"/></figure>
+          <figure class="photos__item"><img src="../assets/images/users/jeremy/fotos/ft1.jpg" alt="alt"/></figure>
+          <figure class="photos__item"><img src="../assets/images/users/jeremy/fotos/ft2.jpg" alt="alt"/></figure>
+          <figure class="photos__item"><img src="../assets/images/users/jeremy/fotos/ft3.jpg" alt="alt"/></figure>
         </div>
       </section>
-      <section class="songs">
+      <section class="songs section__grid">
         <h2 class="section__title title__flex">Canciones</h2>
         <article class="song">
-          <figure class="song__img"><img src="twenty__pilots.png" alt="alt"/></figure>
+          <figure class="song__img"><img src="../assets/images/users/jeremy/canciones/cn1.jpg" alt="alt"/></figure>
           <h3 class="song__title">Level of Concern</h3><span class="song__artist">twenty one Pilot</span><span class="song__time">3:52 min</span><a class="song__link" href="https://www.youtube.com/watch?v=loOWKm8GW6A" target="_blank"><span class="song__icon"></span></a>
         </article>
         <article class="song">
-          <figure class="song__img"><img src="dualipa.png" alt="alt"/></figure>
+          <figure class="song__img"><img src="../assets/images/users/jeremy/canciones/cn2.jpg" alt="alt"/></figure>
           <h3 class="song__title">Leviating</h3><span class="song__artist">Dua Lipa</span><span class="song__time">3:50 min</span><a class="song__link" href="https://www.youtube.com/watch?v=TUVcZfQe-Kw" target="_blank"><span class="song__icon"></span></a>
         </article>
         <article class="song">
-          <figure class="song__img"><img src="Daikiri.png" alt="alt"/></figure>
+          <figure class="song__img"><img src="../assets/images/users/jeremy/canciones/cn3.jpg" alt="alt"/></figure>
           <h3 class="song__title">Daikiri</h3><span class="song__artist">Simon Grossmann</span><span class="song__time">3:57 min</span><a class="song__link" href="https://www.youtube.com/watch?v=yJGAEh2gmDE" target="_blank"><span class="song__icon"></span></a>
         </article>
         <article class="song">
-          <figure class="song__img"><img src="todo_de_ti.png" alt="alt"/></figure>
+          <figure class="song__img"><img src="../assets/images/users/jeremy/canciones/cn4.jpg" alt="alt"/></figure>
           <h3 class="song__title">todo de ti</h3><span class="song__artist">Rauw Alejandro</span><span class="song__time">3:31 min</span><a class="song__link" href="https://www.youtube.com/watch?v=CFPLIaMpGrY" target="_blank"><span class="song__icon"></span></a>
         </article>
       </section>
@@ -68,5 +70,6 @@
     <footer>
       <p>Todos los reservados por Cerro House || Oficial | &copy; 2021 |</p>
     </footer>
+    <script src="main.js"> </script>
   </body>
 </html>

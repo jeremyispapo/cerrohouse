@@ -1,1 +1,50 @@
 @import componentes/_plantilla
+
+.hero__title
+	font-size: $text__size + 1rem
+	color: $color__oscuro
+	text-align: center
+	text-decoration: underline
+	font-family: 'Roboto', sans-serif
+	font-weight: 700
+	margin-block: 1rem
+.texto__principal
+	@include cursivas
+	font-size: $text__size
+	margin-block-end: 1.4rem
+
+.bloque__texto
+	p
+		font-size: $text__size
+
+.aside
+	display: flex
+	justify-content: center
+	align-items: start
+
+.box__buttons
+	display: flex
+	justify-content: center
+
+.button
+	@include button__link
+	min-width: 5rem
+	margin-inline: 1rem
+	border: none
+	font-size: $text__size - .4rem
+	&:focus
+		background-color: $color__button__focus
+@media screen and ( min-width: 760px )
+	.contenido__blog
+		display: flex
+		justify-content: space-between
+	.bloque__texto
+		order: 2
+		width: 50rem
+	.aside
+		order: 1
+		width: 30rem
+
+	.tarjeta
+		position: sticky
+		top: calc(50vh - 15rem)

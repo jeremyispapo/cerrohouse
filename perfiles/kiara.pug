@@ -1,0 +1,18 @@
+extends _plantilla
+block direccionCSS
+	link(rel="stylesheet", href="css/plantilla-perfil.css")
+block principal 
+	+principal('Kiara/kiara.jpg','Kiara','https://www.instagram.com/kiara.sadith/','kiara.sadith',"Ay esque nose we 😎🤡",'30/03/21')
+
+block stickers
+	+stickers('kiara/stickers/st1.webp','kiara/stickers/st2.webp','kiara/stickers/st3.webp','kiara/stickers/st4.webp','kiara/stickers/st5.webp')
+
+block photos 
+	+photos('kiara/fotos/ft1.jpg','kiara/fotos/ft2.jpg','kiara/fotos/ft3.jpg')
+
+block songs
+	h2.section__title.title__flex Canciones
+	+songs('kiara/canciones/cn1.jpg','It Will Rain', 'Bruno Mars','4:26 min', 'https://www.youtube.com/watch?v=W-w3WfgpcGg')
+	+songs('kiara/canciones/cn2.jpg','Soñe Contigo', 'Caztro', '3:12 min', 'https://www.youtube.com/watch?v=gZX7lZuKcZI')
+	+songs('kiara/canciones/cn3.jpg', 'Como una obra de Arte','Caztro','2:43 min', 'https://www.youtube.com/watch?v=6hgnmXAGoVw')
+	+songs('kiara/canciones/cn4.jpg','Bajo el agua','Manuel Medrano','3:50 min','https://www.youtube.com/watch?v=zLX_GcXt2pI')

@@ -1,22 +1,70 @@
-header 
-	background-color: $color__principal
-	width: 100%
-	height: 6.5rem
+.header 
 	padding-inline: $espaciado_normal
 	position: relative
 	@include centraElementos
 	@include headFooter
-	.icon_menu
+	.header__icon
 		position: absolute
 		width: 2rem
 		height: 2rem
 		background-image: url(../assets/icons/menu.svg)
 		background-size: 100%
 		left: 2rem
-	.logo 
+		top: calc(50% - 10px)
+	.header__logo 
 		width:15rem
-	nav
-		display: flex
+	.nav	
+		width: 15rem
+		display: block
 		justify-content: space-between
-		ul
+		align-items: center
+		position: absolute
+		z-index: 1
+		height: 20rem
+		background-color: $color__principal
+		top: 6.5rem
+		left: -15rem
+		transition:.4s all ease
+		.nav__ul
 			display: flex
+			flex-direction: column
+			width: 100%
+			height: 100%
+			align-items: center
+			justify-content: space-around
+			.nav__item
+				list-style: none
+				.nav__link
+					font-size: $text__size - .2rem
+					color: #fff
+	.nav.active
+		transform: translateX(15rem)
+
+@media screen and (min-width: 768px)
+	.header
+		.header__content
+			display: flex
+			justify-content: space-between
+			width: 100%
+			max-width: 100rem
+			
+			.nav
+				display: block
+				position: static
+				width: 35rem
+				height: 100%
+				justify-content: space-between
+				&__ul
+					display: flex
+					flex-direction: row
+					width: 100%
+					height: 100%
+					justify-content: space-around
+					align-items: center
+				&__item
+					list-style: none
+				&__link
+					font-size: $text__size - .2rem
+					color: #fff
+			.header__icon
+				display: none

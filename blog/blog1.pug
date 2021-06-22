@@ -1,11 +1,11 @@
 extends _plantilla
 block direccionCSS
-	link(rel="stylesheet", href="css/landing.css", attr)
+	link(rel="stylesheet", href="css/plantilla-blog.css", attr)
 block hero 
 	section.hero
 		figure.hero__image
-			img(src="" alt="f")
-		h1.title__blog Bienvenido a Cerro House Mouse
+			img(src="assets/images/foto_portada.png" alt="f")
+		h1.hero__title Bienvenido a Cerro House Mouse
 block contenidoBlog
 	p.texto__principal No, no es broma, Cerro House ahora tiene un website superPerron!!!, o eso creo...
 	p Weno, weno, no es lo mas emocionante del mundo, tampoco es la gran cosa hacer esto. Tecnicamente demoré alrededor de una semana en realizarlo.
@@ -24,6 +24,6 @@ block contenidoBlog
 	p Weno bais
 	p Si llegaste hasta aqui escribeme un 
 		span Jirafa Obesa en Surco
-	+buttons_blog('A oc', 'Mucho Texto', 'ª')
+	+buttons_blog('A oc', 'Mucho Texto', 'ah ya')
 block asideNormal
-	+tarjeta__usuario('jeremy.jpg', 'Jeremyispapo', '@Palomino.dev')
+	+tarjeta__usuario('jeremy/jeremy.jpg', 'Jeremyispapo', '@Palomino.dev', 'jeremy.html')

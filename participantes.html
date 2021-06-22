@@ -10,35 +10,25 @@
     <link rel="stylesheet" href="css/participantes.css">
   </head>
   <body> 
-    <header> 
-      <figure class="logo"><img src="assets/images/logo_cerro_house.png"></figure>
-      <div class="icon_menu"></div>
-      <nav> 
-        <ul>
-          <li><a href="landing.html">Inicio</a></li>
-          <li><a href="participantes.html">Participantes</a></li>
-          <li><a href="blogs.html">Blog</a></li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="header__content">
+        <figure class="header__logo"><img src="assets/images/logo_cerro_house.png"></figure>
+        <div class="header__icon" id="menu"> </div>
+        <nav class="nav" id="nav"> 
+          <ul class="nav__ul">
+            <li class="nav__item"><a class="nav__link" href="landing.html">Inicio</a></li>
+            <li class="nav__item"><a class="nav__link" href="blogs.html">Blog</a></li>
+            <li class="nav__item"><a class="nav__link" href="participantes.html">Participantes</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <section class="pd__section"> 
         <h1 class="section__title">Participantes</h1>
         <section class="section__grid">
           <article class="tarjeta">
-            <figure class="tarjeta__imagen"><img src="../assets/images/faces/jeremy.jpg" alt="cara del usuario: jeremy.jpg"/></figure>
-            <h3 class="title__card">Jeremyispapo</h3><a class="subtitle__card" href="https://www.instagram.com/palomino.dev/">@Palomino.dev</a><a class="button__link--user" href="jeremy.html">Ver Perfil</a>
-          </article>
-          <article class="tarjeta">
-            <figure class="tarjeta__imagen"><img src="../assets/images/faces/jeremy.jpg" alt="cara del usuario: jeremy.jpg"/></figure>
-            <h3 class="title__card">Jeremyispapo</h3><a class="subtitle__card" href="https://www.instagram.com/palomino.dev/">@Palomino.dev</a><a class="button__link--user" href="jeremy.html">Ver Perfil</a>
-          </article>
-          <article class="tarjeta">
-            <figure class="tarjeta__imagen"><img src="../assets/images/faces/jeremy.jpg" alt="cara del usuario: jeremy.jpg"/></figure>
-            <h3 class="title__card">Jeremyispapo</h3><a class="subtitle__card" href="https://www.instagram.com/palomino.dev/">@Palomino.dev</a><a class="button__link--user" href="jeremy.html">Ver Perfil</a>
-          </article>
-          <article class="tarjeta">
-            <figure class="tarjeta__imagen"><img src="../assets/images/faces/jeremy.jpg" alt="cara del usuario: jeremy.jpg"/></figure>
+            <figure class="tarjeta__imagen"><img src="../assets/images/users/jeremy/jeremy.jpg" alt="alt"/></figure>
             <h3 class="title__card">Jeremyispapo</h3><a class="subtitle__card" href="https://www.instagram.com/palomino.dev/">@Palomino.dev</a><a class="button__link--user" href="jeremy.html">Ver Perfil</a>
           </article>
         </section>
@@ -47,5 +37,6 @@
     <footer>
       <p>Todos los reservados por Cerro House || Oficial | &copy; 2021 |</p>
     </footer>
+    <script src="main.js"> </script>
   </body>
 </html>

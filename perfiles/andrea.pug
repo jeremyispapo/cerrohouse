@@ -1,0 +1,18 @@
+extends _plantilla
+block direccionCSS
+	link(rel="stylesheet", href="css/plantilla-perfil.css")
+block principal 
+	+principal('andrea/andrea.jpg','Andrea','https://www.instagram.com/palomino.dev/','andreadelacruz_26','Ahi no, eso si jamasssss','26/09/15')
+
+block stickers
+	+stickers('andrea/stickers/st1.webp','andrea/stickers/st2.webp','andrea/stickers/st3.webp','andrea/stickers/st4.webp','andrea/stickers/st5.webp')
+
+block photos 
+	+photos('andrea/fotos/ft1.jpg','andrea/fotos/ft2.jpg','andrea/fotos/ft3.jpg')
+
+block songs
+	h2.section__title.title__flex Canciones
+	+songs('andrea/canciones/cn1.jpg',"Beggin'", 'Måneskin','3:48 min', 'https://www.youtube.com/watch?v=GXVEDZjYzUk')
+	+songs('andrea/canciones/cn2.jpg','Hymn For The Weekend', 'Coldplay', '4:20 min', 'https://www.youtube.com/watch?v=YykjpeuMNEk')
+	+songs('andrea/canciones/cn3.jpg', 'Saturno','Pablo Alborán','4:13 min', 'https://www.youtube.com/watch?v=yBAx5nBdJqU')
+	+songs('andrea/canciones/cn4.jpg','Billie Jean','Michael Jackson','4:55 min','https://www.youtube.com/watch?v=Zi_XLOBDo_Y')

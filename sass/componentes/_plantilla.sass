@@ -10,13 +10,19 @@ html
 	font-size: 62.5%
 
 body
-	background: #c7c7c7
+	background: $color__background__page
+
+main
+	max-width: 100rem
+	margin: 0 auto
 
 img 
 	width: 100%
 
 a 
 	text-decoration: none
+	&:visited
+		color: $color__oscuro
 
 @import _header
 .button__link
@@ -25,7 +31,9 @@ a
 		@extend .button__link
 		font-size: $text__size - .5rem
 		padding-block: .5rem
-		padding-inline: 2rem 
+		padding-inline: 2rem
+	&:visited
+		color: white
 
 .section__grid
 	@include section__grid
@@ -37,7 +45,7 @@ a
 	@include pd__section
 
 .tarjeta
-	width: 80%
+	width: 100%
 	max-width: 25rem
 	height: 30rem
 	display: flex
@@ -46,6 +54,7 @@ a
 	justify-content: center
 	border-radius: $border__radius--card
 	margin: $espaciado_normal
+	background-color: $color__background__card
 	@include sombra__caja
 	&__imagen
 		width: 11rem
