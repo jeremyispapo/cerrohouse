@@ -232,6 +232,7 @@ a:visited {
   font-style: italic;
   text-decoration: none;
   font-size: 1.8rem;
+  color: #1c1c1c;
 }
 .subtitle__card--perfil {
   -webkit-margin-start: 1rem;
@@ -342,6 +343,7 @@ footer {
   font-size: 2.1rem;
 }
 .caja .caja__contenido p {
+  color: #1c1c1c;
   text-align: center;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;

@@ -1,0 +1,18 @@
+extends _plantilla
+block direccionCSS
+	link(rel="stylesheet", href="css/plantilla-perfil.css")
+block principal 
+	+principal('mirella/mirella.jpg','Mirella','https://www.instagram.com/papita_121/','papita_121','✨Klla gil✨','08/08/16')
+
+block stickers
+	+stickers('mirella/stickers/st1.webp','mirella/stickers/st2.webp','mirella/stickers/st3.webp','mirella/stickers/st4.webp','mirella/stickers/st5.webp')
+
+block photos 
+	+photos('mirella/fotos/ft1.jpg','mirella/fotos/ft2.jpg','mirella/fotos/ft3.jpg')
+
+block songs
+	h2.section__title.title__flex Canciones
+	+songs('mirella/canciones/cn1.jpg','Fuentes de Ortiz', 'Holy Oysters','3:44 min', 'https://www.youtube.com/watch?v=z1Qj4aYaODU')
+	+songs('mirella/canciones/cn2.jpg','Dreamers', 'Savoir Adore', '4:17 min', 'https://www.youtube.com/watch?v=qH4ryqWze6U')
+	+songs('mirella/canciones/cn3.jpg', 'More Than a Woman','Bee Gees','3:17 min', 'https://www.youtube.com/watch?v=EOP-xCzLrIM')
+	+songs('mirella/canciones/cn4.jpg','Time Leap','Aero Chord','3:40 min','https://www.youtube.com/watch?v=CFPLIaMpGrY')
