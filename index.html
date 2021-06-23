@@ -1,37 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">	
-	<style>
-		*{
-			box-sizing: border-box;
-			margin: 0;
-			padding: 0;
-			font-family: 'Kaushan Script', cursive;
-		}
-		h1 {
-			font-size: 120px;
-			color: white;
-			text-shadow: -6px 0px 1px black;
-		}
-		div {
-			width: 100%;
-			height: 100vh;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			background:green
-		}
-	</style>
-</head>
-<body>
-	<div>
-		<h1>Cerro House</h1>
-	</div>
-</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerro House || Oficial</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&amp;family=Roboto:wght@700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/landing.css">
+  </head>
+  <body> 
+    <header class="header">
+      <div class="header__content">
+        <figure class="header__logo"><img src="assets/images/logo_cerro_house.png"></figure>
+        <div class="header__icon" id="menu"> </div>
+        <nav class="nav" id="nav"> 
+          <ul class="nav__ul">
+            <li class="nav__item"><a class="nav__link" href="index.html">Inicio</a></li>
+            <li class="nav__item"><a class="nav__link" href="blogs.html">Blog</a></li>
+            <li class="nav__item"><a class="nav__link" href="participantes.html">Participantes</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero"> 
+        <article class="hero__content">
+          <picture class="hero__image">
+            <source media="(min-width:760px )" srcset="assets/images/foto_portada_desktop.png"><img src="assets/images/foto_portada.png">
+          </picture>
+          <div class="text_content">
+            <h1 class="tituloPrincipal"> <a href="blog1.html">Bienvenido a Cerro House</a></h1>
+            <p>No, no es broma, Cerro House ahora tiene un website superPerron!!!, o eso creo...</p><a class="button__link" href="blog1.html">Ver Mas</a>
+          </div>
+        </article>
+      </section>
+      <section class="pd__section">
+        <h2 class="section__title">Anuncios</h2>
+        <div class="section__grid"><a class="caja" href="blog1.html">
+            <figure class="caja__imagen"><img src="../assets/images/anuncios_blog/blog1.png" alt="foto del articulo:blog1.png"/></figure>
+            <div class="caja__contenido">
+              <figure class="caja__usuario"><img src="../assets/images/users/jeremy/jeremy.jpg" alt="alt"/></figure>
+              <h3 class="title__card">Bienvenido a Cerro House</h3>
+              <p>No, no es broma, Cerro House ahora tiene un website superPerron!!!, o eso creo...</p>
+            </div></a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Todos los reservados por Cerro House || Oficial | &copy; 2021 |</p>
+    </footer>
+    <script src="main.js"> </script>
+  </body>
 </html>
