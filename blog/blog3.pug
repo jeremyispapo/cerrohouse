@@ -1,0 +1,18 @@
+extends _plantilla
+block direccionCSS
+	link(rel="stylesheet", href="css/plantilla-blog.css", attr)
+block hero 
+	section.hero
+		figure.hero__image
+			img(src="assets/images/anuncios_blog/blog3.jpg" alt="f")
+		h1.hero__title Yo elijo mi don 🦸🏻‍♀️
+block contenidoBlog
+	p.texto__principal Bueno manos si se me concidera , poder tener un don sería el de leer mentes . 
+	p Me gusta el chisme okno pero me gustaría saber que me ocultan , o si me insultan pero en su mente yts 🙂. 
+	p Me gustaría poder saber si una persona se arrepiente leyendo lo que piensa xdd .
+	p Tambien saber si me miente 🥲 o bueno más que todo saber que piensan de mi para poder mejorar como persona 😆.
+	p Más que todo ayudaría a las personas , por si les quieren hacer daño como una super héroe 🦸🏻‍♀️ xdd .
+	p Suena raro lo sé manos pero se imaginan de las cosas que se puede evitar ufff ni que decir jajajaja .
+	+buttons_blog('A oc', 'Mucho Texto', 'ah ya')
+block asideNormal
+	+tarjeta__usuario('andrea/andrea.jpg', 'Andrea', 'andreadelacruz_26', 'andrea.html')

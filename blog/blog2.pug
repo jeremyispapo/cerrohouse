@@ -1,0 +1,18 @@
+extends _plantilla
+block direccionCSS
+	link(rel="stylesheet", href="css/plantilla-blog.css", attr)
+block hero 
+	section.hero
+		figure.hero__image
+			img(src="assets/images/anuncios_blog/blog2.jpg" alt="f")
+		h1.hero__title ¡¡Yo elijo donde me gustaria vivir¡¡
+block contenidoBlog
+	p.texto__principal Me gustaría vivir en Corea del Sur , por qué se habla muy bonito de ese lugar aparte de su comida .
+	p Como todo lugar tiene sus pro y contras , se que la vida es mucho más cara es como 5 veces que acá .
+	p Es un sueño mío poder tal vez , ojalá se cumpla , con mucho esfuerzo de mi parte claro está xd. 
+	p Por todo el menú que veo , sus platos son riquísimos , además la gente es de mi tipo 😏 .
+	p Aunque en ese país es muy machista , iría con alguien para cuidarme siempre .
+	p Por último me encantaría comer gogi gui  (barbacoa) es carne pero es carne de primera calidad en Corea .
+	+buttons_blog('A oc', 'Mucho Texto', 'ah ya')
+block asideNormal
+	+tarjeta__usuario('andrea/andrea.jpg', 'Andrea', 'andreadelacruz_26', 'andrea.html')

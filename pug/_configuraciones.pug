@@ -10,7 +10,7 @@ mixin tarjeta__usuario(usuario, nickName, nickName__redes, user__perfil)
 	article.tarjeta
 		figure.tarjeta__imagen: img(src="../assets/images/users/"+usuario, alt="alt")
 		h3.title__card #{nickName}
-		a.subtitle__card(href="https://www.instagram.com/palomino.dev/") #{nickName__redes}
+		a.subtitle__card(href="https://www.instagram.com/"+nickName__redes) @#{nickName__redes}
 		a.button__link--user(href=""+user__perfil) Ver Perfil
 
 mixin hero_blog(titulo)
