@@ -1,0 +1,18 @@
+extends _plantilla
+block direccionCSS
+	link(rel="stylesheet", href="css/plantilla-blog.css", attr)
+block hero 
+	section.hero
+		figure.hero__image
+			img(src="assets/images/anuncios_blog/blog7.jpg" alt="f")
+		h1.hero__title La Copa América
+block contenidoBlog
+	p.texto__principal oficialmente Conmebol Copa América, es el principal torneo internacional oficial de fútbol masculino en América del Sur.
+	p Ha sido conquistada por ocho de las diez selecciones de la Conmebol, teniendo el dominio de los países futbolizados: Uruguay posee quince títulos, Argentina, catorce y Brasil, nueve. Le siguen Chile, Paraguay y Perú con dos, así como Bolivia y Colombia con uno.
+	p Además de las diez selecciones de la Conmebol, suelen participar dos equipos invitados, normalmente de la Concacaf, aunque han ocurrido excepciones. 
+	p En la edición conmemorativa de 2016 participaron dieciséis selecciones, las diez de la Conmebol y seis de la Concacaf.
+	p Lamentablemente el Bicho SIIIIUUU no puede participar en este campeonato, pero el a dicho que jugaría por Perú si se daría el caso SIIIIIIUUUUUUUUUU
+
+	+buttons_blog('A oc', 'Mucho Texto', 'ah ya')
+block asideNormal
+	+tarjeta__usuario('alexandro/alexandro.jpg', 'Alexandro', 'pieroj_02', 'alexandro.html')
