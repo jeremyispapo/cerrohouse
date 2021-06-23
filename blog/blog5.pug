@@ -1,0 +1,54 @@
+extends _plantilla
+block direccionCSS
+	link(rel="stylesheet", href="css/plantilla-blog.css", attr)
+block hero 
+	section.hero
+		figure.hero__image
+			img(src="assets/images/anuncios_blog/blog5.jpg" alt="f")
+		h1.hero__title ¿Caras de Pixar?
+block contenidoBlog
+	p.texto__principal ¿Te has preguntado como serias en un dibujo de pixar?
+	p El otro dia estaba viendo TikTok y un video que decia que existe un filtro que transforma tu cara a la de un dibujo de pixar
+	p Es obvio que lo intente y el resultado fue este
+	figure.bloque__image
+		img(src="assets/images/anuncios_blog/blog5/fb1.jpeg")
+	p Pero tambien me pregunté, ¿Cómo se ven mis manas con este filtro 😏?
+
+	h3.bloque__title Adhrian
+	figure.bloque__image
+		img(src="assets/images/anuncios_blog/blog5/fb2.jpg")
+	p Por ahora vamos bien ,no le queda mal xdd
+
+	h3.bloque__title Mirella
+	figure.bloque__image
+		img(src="assets/images/anuncios_blog/blog5/fb3.jpg")
+	p jajajaja, le que da bien, pero tengo que admitir que la foto original da mas risa :v
+
+	h3.bloque__title Alexandro
+	figure.bloque__image
+		img(src="assets/images/anuncios_blog/blog5/fb4.jpg")
+	p eY beybi boi, jjajaajaja, si Crepúsculo fuera hecho por PIXAR, sin duda este man estaría en la pelicula xd
+
+	h3.bloque__title Andrea
+	figure.bloque__image
+		img(src="assets/images/anuncios_blog/blog5/fb5.jpg")
+	p ehhhh, mana, tas bien??, parece que han dibujado en plena ataque xd, okno
+
+	h3.bloque__title Kiara
+	figure.bloque__image
+		img(src="assets/images/anuncios_blog/blog5/fb6.jpg")
+	p No se ustedes, pero a mí me hace acordar a una de las hijas de Grud, jajajaja.
+
+	h3.bloque__title Sagasti xd
+	figure.bloque__image
+		img(src="assets/images/anuncios_blog/blog5/fb7.jpg")
+	p Obvimente no tenia que dejar de lado a este man, solo mirenlo se ve empoderado 
+	br
+	p Y bueno ya esta bien por ahora. Si quieres usar este filtro puedes usarlo con la aplicación Snapchat, weno, yo lo encontré ahí 
+	p Si ves esto escribeme en WhatsApp: Bicho truko!
+	p Weno Bais 
+
+
+	+buttons_blog('A oc', 'Mucho Texto', 'ah ya')
+block asideNormal
+	+tarjeta__usuario('jeremy/jeremy.jpg', 'Jeremyispapo', 'palomino.dev', 'jeremy.html')
