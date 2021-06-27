@@ -1,0 +1,25 @@
+extends _plantilla
+block direccionCSS
+	link(rel="stylesheet", href="css/plantilla-blog.css", attr)
+block hero 
+	section.hero
+		figure.hero__image
+			img(src="assets/images/anuncios_blog/blog8.jpg" alt="f")
+		h1.hero__title La carrera del siglo
+block contenidoBlog
+	p.texto__principal ¿Crees que eres competencia para nosotros?
+	p El dia Sabado 27 de junio, Alex y yo nos encaramos en un duelo de velocidad. Dos competidores, un Ganador :v
+	p En el dia de la carrera no había mucha gente, pero eso no importaba, lo que si importaba era saber quien de los dos era capaz de llegar primero a la meta.
+	p Clima parcialmente despejado, con un ambiente frio y desolado (ya sé, soy muy dramático xd)
+	p Estando en nuestras posiciones, en nuestros puntos de partida, visualizabamos el recorrido, mentalizandonos que solo habría un solo ganador.
+	p Empieza el conteo regresivo, un silencio inunda nuestras cabezas, eramos capaces de sentir los laditos de corazón junto con nuestra fuerte respiración.
+	p No sé ustedes, pero aunque ustedes lo vieron así
+	figure.bloque__image
+		img(src="assets/images/anuncios_blog/blog8/ft2.png")
+	p Alex y YO lo sentimos así
+	figure.bloque__image
+		img(src="assets/images/anuncios_blog/blog8/ft1.jpg")
+	p Obviamente hubo un ganador, pero no lo pondré por aquí. Solo diré que ambos nos consideramos dignos rivales xd.
+	+buttons_blog('A oc', 'Mucho Texto', 'ah ya')
+block asideNormal
+	+tarjeta__usuario('jeremy/jeremy.jpg', 'Jeremyispapo', 'palomino.dev', 'jeremy.html')
